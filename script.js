@@ -69,4 +69,22 @@ function strSort(str) {
 }
 
 console.log(strSort('my name is rizwan siddiqui'));
-  
+
+/* 5. Capitalize First Letter of Each Word
+
+Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word into upper case.
+
+Example string : 'the quick clever fox'
+
+Expected Output : 'The Quick Clever Fox ' */
+
+function capitalize(str) {
+  const strArray = str.split(' ');
+  let result = [];
+  for (let i = 0; i < strArray.length; i++) {
+    result.push(strArray[i].charAt(0).toUpperCase() + strArray[i].slice(1));
+  }
+  return result.join(' ');
+}
+
+console.log(capitalize("heeyyy, i'm so freaking bored!!"));
